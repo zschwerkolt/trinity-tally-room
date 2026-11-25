@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#102d40" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Trinity Tally Room · Victoria 2026</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icon-192.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="mast">
+      <div class="frame mastinner">
+        <a class="brand" href="#desk" aria-label="Trinity Tally Room home"
+          ><span class="brandmark" aria-hidden="true"><i></i></span
+          ><span>Trinity Tally Room</span></a
+        ><span class="masttag">Election party <b> / </b> Victoria 2026</span
+        ><button
+          class="iconbutton"
+          id="settings"
+          aria-label="Election settings"
+          title="Election settings"
+        ></button>
+      </div>
+    </header>
+    <nav class="nav" aria-label="Election workspace">
+      <div class="frame navinner">
+        <a href="#desk" data-nav="desk">Tally room</a
+        ><a href="#register" data-nav="register">Ballot register</a
+        ><a href="#results" data-nav="results">Results</a
+        ><span id="offline" role="status"></span>
+      </div>
+    </nav>
+    <main class="frame" id="app"><p>Opening the tally room…</p></main>
+    <footer class="frame footer">
+      <span>Seat of Trinity <i> / </i> Election party 2026</span
+      ><span
+        >Independent party count <i>·</i>
+        <a href="./credits.txt" target="_blank" rel="noopener">Credits</a></span
+      >
+    </footer>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="modal"></dialog>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

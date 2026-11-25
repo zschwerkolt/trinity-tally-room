@@ -1,0 +1,6 @@
+Trinity Tally handwritten-digit reader
+
+The bundled weights in digits.bin were trained for this app on the MNIST training set of handwritten numerals (Yann LeCun, Corinna Cortes and Christopher J. C. Burges). The classifier has a 16 × 16 input, two dense hidden layers and ten digit outputs. The browser returns tentative ranks for digits 1 to 5 and flags other or uncertain marks for review. The recogniser never enforces a permutation or uses the other ranks to guess an unclear mark.
+
+Training data source: https://storage.googleapis.com/cvdf-datasets/mnist/
+MNIST dataset reference: https://www.tensorflow.org/datasets/catalog/mnist
